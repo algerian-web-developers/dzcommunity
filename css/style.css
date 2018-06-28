@@ -1,0 +1,36 @@
+body{
+    background-color:black;
+    text-align: center;
+}
+@font-face{
+    font-family: custom_font;
+    src: local(font/mohammad);
+}
+@font-face{
+    font-family: Andalus;
+    src: local(font/Andalus);
+}
+.head{
+    color: orangered;
+    font-size: 200%;
+    width: 100%;
+}
+#en-head{
+    font-family: cursive;
+    width: 50%;
+}
+#ar-head{
+    font-family: custom_font;
+    width: 50%;
+}
+.page-content{
+    font-family: Andalus;
+    font-size: 150%;
+    color: rgb(0, 195, 255);
+}
+img{
+    width: 100%
+}
+#logo{
+    width: 30%;
+}
