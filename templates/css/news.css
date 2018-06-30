@@ -1,0 +1,102 @@
+/*----------Navigation bar style-----------*/
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0,171,148);
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 5000;
+}
+ul.topnav li {float: right;}
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+ul.topnav li a:hover {background-color: rgb(0, 136, 118);}
+ul.topnav li.menu-icon {display: none;}
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:first-child) {display: none;}
+    ul.topnav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    ul.topnav li.menu-icon {
+      float: left;
+      display: block;
+    }
+  }
+  @media screen and (max-width:680px) {
+    ul.topnav.responsive {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    ul.topnav.responsive li.menu-icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    ul.topnav.responsive li {
+      float: none;
+      display: inline;
+    }
+    ul.topnav.responsive li a {
+      display: block;
+      text-align: right;
+    }
+  }
+  /*-------end of navigation bar style------*/
+  
+  /*-------menu icon animation--------------*/
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 2px;
+  background-color: #666;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 4px) ;
+  transform: rotate(-45deg) translate(-6px, 4px) ;
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -4px) ;
+  transform: rotate(45deg) translate(-6px, -4px) ;
+}
+/*-------end of menu icon animation--------*/
+
+/*-----------drop down links-------------*/
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: rgb(0,171,148);
+  cursor: pointer;
+}
+.dropdown-content a{
+color: white;
+padding: 12px 16px;
+display: block;
+}
+.dropdown-content a:hover{
+background-color: rgb(0, 136, 118);
+}
+.show{
+display: block;
+position: fixed;
+}
+/*----------end of drop down links ------------*/
+
+/*----------news page style-------------------*/
